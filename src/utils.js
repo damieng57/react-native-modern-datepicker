@@ -226,7 +226,7 @@ const localizeMonths = locale => {
         'Avril',
         'Mai',
         'Juin',
-        'Julliet',
+        'Juillet',
         'Août',
         'Septembre',
         'Octobre',
