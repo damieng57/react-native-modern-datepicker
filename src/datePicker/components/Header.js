@@ -93,7 +93,7 @@ const Header = ({changeMonth}) => {
                 })
               }>
               <Text style={style.headerText}>
-                {utils.toPersianNumber(utils.getTime(mainState.activeDate))}
+                {utils.toPersianNumber(utils.getTime(mainState.selectedDate))}
               </Text>
             </TouchableOpacity>
           )}
