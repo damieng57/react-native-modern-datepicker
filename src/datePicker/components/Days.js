@@ -39,14 +39,14 @@ const Days = () => {
                 {
                   borderRadius: itemSize / 2,
                 },
-                mainState.selectedDate === day.date && style.dayItemSelected,
+                mainState.selectedDate.split(' ')[0] === day.date.split(' ')[0] && style.dayItemSelected,
               ]}
               onPress={() => !day.disabled && onSelectDay(day.date)}
               activeOpacity={0.8}>
               <Text
                 style={[
                   style.dayText,
-                  mainState.selectedDate === day.date && style.dayTextSelected,
+                  mainState.selectedDate.split(' ')[0] === day.date.split(' ')[0] && style.dayTextSelected,
                   day.disabled && style.dayTextDisabled,
                 ]}>
                 {day.dayString}
